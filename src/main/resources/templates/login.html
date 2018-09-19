@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+label{
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+input{
+    outline: none;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 2px 10px 2px 10px;
+}
+input[type="text"]{
+    height: 14px;
+    line-height: 14px;
+    border-radius: 5px;
+    padding:10px 10px;
+    vertical-align: middle;
+    color:#666;
+}
+input[type="button"]{
+    padding: 0px 10px;
+    height:40px;
+}
+ 
+ 
+.login-box p{
+    vertical-align:middle;
+    padding:10px 10px;
+}
+</style>
+</head>
+<body>
+<div class="login-box" id="login-id">
+            <form action="/poi/user/save" method="post" >
+                <p>
+                    <label>姓名</label>
+                    <input name="name" value="" type="text" class="normal"/>
+                    <small>输入姓名.</small>
+                </p>
+                <p>
+                    <label>性别</label>
+                    <input name="sex" value="1" type="radio" class="normal"/> 男 &nbsp;&nbsp;
+                    <input name="sex" value="2" type="radio" class="normal"/> 女 &nbsp;&nbsp;
+                    <small>选择性别.</small>
+                </p>
+                  <p>
+                    <label>年龄</label>
+                    <input name="age" value="" type="text" class="normal"/>
+                    <small>输入年龄.</small>
+                </p>
+                <p>
+                    <input type="submit" value="提交"/>
+                </p>
+            </form>
+        </div>
+</body>
+</html>
